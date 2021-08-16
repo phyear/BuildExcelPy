@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import request
-from bulidExcel import buildData, bulidExcel
+from BuildExcelOprate import buildData
 import json
 
 app = Flask(__name__)

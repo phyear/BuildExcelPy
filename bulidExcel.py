@@ -63,6 +63,7 @@ def buildData(buildJson):
     ### 构造数据
     for calcRule in jsonObject['calcRules']:
         custom = predefinedValueDist.copy()
+        ## 替换自定义规则的值
         handlerPredefinedValue(custom, calcRule['predefinedValue'], heandNames)
         for i in range(calcRule['amount']):
             datas.append(handlerRowData(custom,heandNames))
